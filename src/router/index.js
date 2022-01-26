@@ -3,6 +3,7 @@ import HomePage from '../views/HomePage.vue'
 import AddPage from '../views/AddPage.vue'
 import ListPage from '../views/ListPage.vue'
 import CalendarPage from '../views/CalendarPage.vue'
+import SinglePage from '../views/SinglePage.vue'
 
 const routes = [
   {
@@ -24,6 +25,10 @@ const routes = [
     path: '/calendar',
     name: '/Calendar',
     component: CalendarPage
+  },
+  {
+    path: '/list/:id',
+    component: SinglePage
   }
 ]
 

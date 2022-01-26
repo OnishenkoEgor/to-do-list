@@ -1,11 +1,12 @@
 <template>
-  <h1>Home</h1>
-  <test></test>
+  <h1>Main page</h1>
+  <list></list>
 </template>
 
 <script>
-import Test from "../components/Test.vue";
+import List from "@/components/List.vue";
+
 export default {
-  components: { Test },
+  components: { List },
 };
 </script>
