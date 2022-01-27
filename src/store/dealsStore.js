@@ -34,12 +34,13 @@ export const dealsStore = {
         getDealById: state => id => {
             return state.deals.filter(deal => deal.id == id)[0]
         },
-        getDealByDate(state, dealDate) {
-            return state.deals // not ready
+        getSortedDeals: state => sortParam => {
+            console.log(sortParam)
+            return sortParam !== "" ? state.deals.sort((a, b) => a[sortParam]?.localeCompare(b[sortParam])) : state.deals
         }
     },
     actions: {
-        
+
     },
     namespaced: true
 }

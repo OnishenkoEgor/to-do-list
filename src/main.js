@@ -3,8 +3,13 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import directives from './directives'
+import components from './components/UI'
 
 let app = createApp(App)
+
+components.forEach(component => {
+    app.component(component.name, component)
+})
 
 directives.forEach(directive => {
     app.directive(directive.name, directive)

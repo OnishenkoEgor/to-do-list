@@ -1,8 +1,11 @@
 <template>
   <div class="col s12 m6">
-    <div class="card blue-grey darken-1">
+    <div class="card ">
       <div class="card-content white-text">
-        <span class="card-title">{{ cardInfo.title }}</span>
+        <div class="card-info">
+          <span class="card-title">{{ cardInfo.title }}</span>
+          <span class="card-time">{{ cardInfo.deadline }}</span>
+        </div>
         <p>
           {{ cardInfo.shortDesc }}
         </p>
@@ -29,5 +32,11 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+.card-info {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  justify-content: space-between;
+}
 </style>

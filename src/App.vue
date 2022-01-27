@@ -6,6 +6,7 @@
 </template>
 <script>
 import "@/assets/style/container.scss";
+import "@/assets/style/app.scss";
 
 import Header from "@/components/Header.vue";
 
